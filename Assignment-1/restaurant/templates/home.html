@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <style>
+      body{
+        background-color:lightcoral;
+      }
+    </style>
+    {% endblock %}
+
+{% block content %}
+{{block.super}}
+<div class="p-5 container">
+    <div class="row pt-5 mt-5 align-items-center m-auto">
+        <div class="txt col-12 order-2 col-lg-6 order-lg-1">
+            <div class="card m-auto bg-transparent border-0" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-light fst-italic text-black"><span class="text-warning ">FoodieByte</span> – Where Flavor Meets Passion!</h5>
+                    <p class="card-text">
+                        <p class="fw-light text-light">Discover the ultimate dining experience at FoodieByte, the go-to destination for food enthusiasts.</p>
+                        <p class="fw-light
+                        text-light">Indulge in the best flavors tailored to your preferences. Join us on a culinary journey and savor the tastes that make us unique. Your unforgettable dining experience starts here!
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="img col-12 order-1 col-lg-6 order-lg-2">
+            <img class="img-fluid rounded-3" src="{% static '10351122_4452317.jpg'%}" alt="">
+        </div>
+    </div>
+</div>
+{% endblock %}

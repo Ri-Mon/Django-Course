@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    <style>
+      body{
+        background-color: palegreen;
+      }
+    </style>
+    {% endblock %}
+
+{% block content  %}
+{{block.super}}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+    <div class="txt row text-center pt-5 mt-5">
+        <div class="col-12 col-lg-6">
+            <img class="img-thumbnail " src="{%static 'images/restaurant-interior.jpg'%}" alt="" >
+        </div>
+        <div class="about col-12 col-lg-6">
+        <div class="card border-0">
+            <div class="card-body">
+                <h5 class="card-title fw-semibold fst-italic"><span class="text-secondary">About Us</span></h5>
+                <hr>
+                <p class="card-text">
+                    <p class="fw-light text-primary-emphasis">We are dedicated to offering you the highest quality, hygienic food that evokes the warmth of homemade meals. Our commitment to your health is unwavering, and we prioritize hygiene above all else. We will never compromise on your well-being.</p>
+                    <p class="fw-light
+                    text-warning-emphasis">
+                    Join us on a culinary journey where every dish is crafted with care and attention. Our focus on cleanliness and quality ensures that you can enjoy your favorite flavors in a safe and inviting environment.
+                    </p>
+                    <p class="fw-lighter">Connect with us on [<span class="text-info">FoodieByte</span>] to stay updated on our latest offerings and promotions.<br> Thank you for choosing <span class="text-info">FoodieByte</span>.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
